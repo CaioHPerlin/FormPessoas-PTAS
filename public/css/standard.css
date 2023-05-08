@@ -40,7 +40,7 @@ form label{
 }
 
 .button {
-    font-family: 'Poppins', Helvetica, sans-serif !important;
+    font-family: 'Poppins', sans-serif, Helvetica !important;
     box-sizing: border-box;
     width: 100%;
     cursor: pointer;
