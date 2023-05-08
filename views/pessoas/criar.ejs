@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Criar Pessoas</title>
+    <link rel="stylesheet" href="/css/standard.css">
+</head>
+<body>
+    <main class="container block">
+        <h2>Cadastrar</h2>
+        <form method="post" action="/pessoas/criar">
+            <label for="name">Nome</label>
+            <input required id="name" name="nome" type="text"/>
+            <label for="surname">Sobrenome</label>
+            <input required id="surname"  name="sobrenome" type="text"/>
+            <label for="height">Altura</label>
+            <input required id="height" name="altura" type="text"/>
+            <label required for="age">Idade</label>
+            <input id="age" name="idade" type="text"/>
+
+            <input class="button" type="submit" value="Enviar">
+            <h1 class="button" onClick="location = '/pessoas/'">Mostrar Pessoas</h1>
+        </form>
+    </main>
+</body>
+</html>
