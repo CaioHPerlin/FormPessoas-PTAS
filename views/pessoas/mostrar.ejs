@@ -15,7 +15,11 @@
                 <li class="block">
                     <span><%= pessoa.nome %> <%= pessoa.sobrenome %><br></span>
                     <span>Altura: <%= pessoa.altura %></span>
-                    <span>Idade: <%= pessoa.idade %></li></span>
+                    <span>Idade: <%= pessoa.idade %></span>
+                    <form method="post" action="/pessoas/deletar">
+                        <input id="id" name="id" type="hidden" value="<%= pessoa.id %>">
+                        <input class="button" type="submit" value="X"/>
+                    </form>
                 </li>
             <% }) %>
         </ul>
